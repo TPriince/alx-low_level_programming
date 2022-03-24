@@ -9,22 +9,23 @@
 char *rot13(char *s)
 {
 	int i, j;
-	int i = 0;
+	char base[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	char let[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char let13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-
-	while (*(s + i) != '\0')
+	/* loop through string and evaluate each character */
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; j < 53; j++)
-		{
-			if (let[j] == s[i])
+		/* loop through base array to find a match with s[i] */
+		for (j = 0; base[j] != '\0'; j++)
+			/* if match is found */
+			if (s[i] == base[j])
 			{
-				s[i] = let13[j];
+				/* replace that char with char from rot13 */
+				s[i] = rot13[j];
 				break;
 			}
-		}
-		i++;
 	}
+
+	/* return converted string */
 	return (s);
 }
