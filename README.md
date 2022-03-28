@@ -1,1 +1,1 @@
-ALX Low Level Programming readme
+Even more pointers, arrays and strings project readme
