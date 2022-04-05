@@ -3,8 +3,8 @@
 
 /**
  * *argstostr - concatenates all the arguments of the program
- * @a: number of arguments
- * @b: array of arguments
+ * @ac: number of arguments
+ * @av: array of arguments
  *
  * Return: pointer to the new string (Success), NULL (Error)
  */
@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 	str = malloc(sizeof(char) * (len + 1));
 
 	if (str == NULL)
-		retrun (NULL);
+		return (NULL);
 
 	k = 0;
 
