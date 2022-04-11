@@ -4,11 +4,11 @@
 /**
  * _strlen - a function that gets a length of string
  *
- * @str: the string to get the lebgth of
+ * @s: the string to get the lebgth of
  *
- * Return: length of @str
+ * Return: the length of the string
  */
-int _strlen(const char *str)
+int _strlen(char *s)
 {
 	int i;
 
@@ -28,7 +28,7 @@ int _strlen(const char *str)
  * @src: string to copy
  * @dest: copy string to here
  *
- * Return: @dest
+ * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
