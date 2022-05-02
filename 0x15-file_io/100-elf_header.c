@@ -24,7 +24,10 @@ void check_if_elf(unsigned char *e_ident)
 
 	while (index < 4)
 	{
-		if (e_ident[index] != 127 && e_ident[index] != 'E' && e_ident[index] != 'L' && e_ident[index] != 'F') /* 0x7F is 127 in ASCII */
+		if (e_ident[index] != 127 &&
+		    e_ident[index] != 'E' &&
+		    e_ident[index] != 'L' &&
+		    e_ident[index] != 'F') /* 0x7F is 127 in ASCII */
 		{
 			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
 			exit(98);
@@ -125,7 +128,8 @@ void print_data(unsigned char *e_ident)
  */
 void print_version(unsigned char *e_ident)
 {
-	printf("  Version:                           "); /* EI_VERSION - File version */
+	/* EI_VERSION - File version */
+	printf("  Version:                           ");
 
 	if (e_ident[EI_VERSION] == EV_CURRENT)
 		printf("%d (current)\n", e_ident[EI_VERSION]);
@@ -195,7 +199,8 @@ void print_osabi(unsigned char *e_ident)
  */
 void print_abi(unsigned char *e_ident)
 {
-	printf("  ABI Version:                       %d\n", e_ident[EI_ABIVERSION]); /* EI_ABIVERSION = ABI version */
+	/* EI_ABIVERSION = ABI version */
+	printf("  ABI Version:                       %d\n", e_ident[EI_ABIVERSION]);
 }
 
 /**
