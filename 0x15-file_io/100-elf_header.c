@@ -4,17 +4,17 @@
  * e_ident[] - IDENTIFICATION INDEXES
  *
  * Description: The initial bytes mark the file as an object file
- * 		and provide machine-independent data.
+ * and provide machine-independent data.
  * The initial bytes of an ELF header (and an object file)
  * correspond to the e_indent member.
  */
 
 /**
  * check_if_elf - checks if file is an ELF file by checking if it
- * 		  contains the magic numbers/file signature of an ELF file
+ * contains the magic numbers/file signature of an ELF file
  *
  * @e_ident: a pointer to an array of bytes specifies
- * 	     how to interpret the file
+ * how to interpret the file
  *
  * Return: nothing
  */
