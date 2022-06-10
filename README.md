@@ -1,7 +1,7 @@
 <h1>ALX Low Level Programming project</h1>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/TPriince/alx-low_level_programming?logo=github)
-https://img.shields.io/badge/code%20style-betty-yellow
+
 ![GitHub](https://img.shields.io/github/license/TPriince/alx-low_level_programming)
 
 <h3>The C programming language</h3>
