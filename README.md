@@ -2,6 +2,7 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/TPriince/alx-low_level_programming?logo=github)
 ![GitHub](https://img.shields.io/github/license/TPriince/alx-low_level_programming)
+![GitHub last commit](https://img.shields.io/github/last-commit/TPriince/alx-low_level_programming)
 
 <h3>The C programming language</h3>
 
