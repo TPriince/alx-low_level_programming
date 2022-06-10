@@ -1,5 +1,7 @@
 <h1>ALX Low Level Programming project</h1>
 
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=TPriince&show_icons=true)
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/TPriince/alx-low_level_programming?logo=github)
 ![GitHub](https://img.shields.io/github/license/TPriince/alx-low_level_programming)
 ![GitHub last commit](https://img.shields.io/github/last-commit/TPriince/alx-low_level_programming)
