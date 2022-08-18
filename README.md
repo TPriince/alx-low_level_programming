@@ -1,1 +1,1 @@
-## C - Makefiles project
+## ALX Low-level programming projects repository
